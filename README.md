@@ -10,6 +10,16 @@ client layer.
 
 ## Build instructions
 
+### If you want to use the SMU CCLAW Docker setup
+
+To build and serve: `docker compose up`
+
+If you are on VSCode, you should probably use this with the [VSCode Dev Environment extension.](https://code.visualstudio.com/docs/devcontainers/containers)
+
+For more info on docker compose, see [the docs](https://docs.docker.com/compose/gettingstarted/).
+
+### From the original readme:
+
 Steps to build this bundle:
 
  - Install the `ciaowasm` bundle (see `ciaowasm/README.md`)
