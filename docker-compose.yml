@@ -1,0 +1,11 @@
+services:
+  web:
+    env_file: .env
+    build: 
+      context: .
+      args:
+        PLAYGROUNDPORT: ${PLAYGROUNDPORT}
+    ports:
+      - "${PLAYGROUNDPORT}:${PLAYGROUNDPORT}"
+    volumes:
+      - .:/playground
