@@ -3,8 +3,14 @@
 .AppleDouble
 .LSOverride
 
+# VSCode
+.vscode
+
 # Docker
 Dockerfile
+.dockerignore
+docker-compose.dev.yml
+docker-compose.yml
 
 # Git
 .gitignore
