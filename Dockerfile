@@ -36,9 +36,7 @@ RUN eval "$(/ciao/build/bin/ciao-env --sh)" && \
     chmod +x build.sh  && ./build.sh
 
 
-CMD ./etc/ciao-serve-mt -p ${PLAYGROUNDPORT}
-# If the above CMD doesn't work, try this instead: 
-# eval "$(/ciao/build/bin/ciao-env --sh)" && ./etc/ciao-serve-mt -p ${PLAYGROUNDPORT}
+CMD eval "$(/ciao/build/bin/ciao-env --sh)" && ./etc/ciao-serve-mt -p ${PLAYGROUNDPORT}
 
 # Resources
 ## Git repos and build context: https://ryanfb.xyz/etc/2015/07/29/git_strategies_for_docker.html
